@@ -1,4 +1,3 @@
-#include "../include/mod_interface.hpp"
 #include <unordered_set>
 #include "../extern/beatsaber-hook/shared/utils/utils.h"
 #include "../extern/beatsaber-hook/shared/utils/logging.hpp"
@@ -26,7 +25,7 @@ MAKE_HOOK_OFFSETLESS(ConditionalMaterialSwitcher_Awake, void, Il2CppObject* self
 extern "C" void setup(ModInfo& info) {
 
     info.id = "TrailOverlap";
-    info.version = "0.1.0";
+    info.version = "1.0.1";
     modInfo = info;
 }
 
