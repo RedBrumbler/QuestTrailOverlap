@@ -18,7 +18,8 @@ MAKE_HOOK_OFFSETLESS(ConditionalMaterialSwitcher_Awake, void, Il2CppObject* self
 {
     Il2CppObject* GO = CRASH_UNLESS(il2cpp_utils::GetPropertyValue(self, "gameObject"));
     std::string thisName = to_utf8(csstrtostr(CRASH_UNLESS(il2cpp_utils::GetPropertyValue<Il2CppString*>(GO, "name"))));
-    if (thisName == "Trail(Clone)") return;
+    getLogger().info("material switcher object name = %s", thisName.c_str());
+    if (thisName == "SaberTrailRenderer(Clone)") return;
     ConditionalMaterialSwitcher_Awake(self);
 }
 
